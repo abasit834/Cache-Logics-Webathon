@@ -1,0 +1,113 @@
+header{
+    width : 100vw;
+    height : 10px;
+    position : absolute;
+    top:0;
+    left : 0;
+    display: flex;
+    align-items: center;
+    padding : 40px;
+}
+html{
+    overflow-x : hidden;
+}
+
+nav ul li {
+    font-weight: 700;
+    color : #475467;
+    list-style-type: none;
+    display: inline;
+    margin-left : 30px;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+nav li img {
+    margin-left : 10px;
+    margin-bottom: 1px;
+}
+
+#contact-us{
+    font-family: 'Urbanist';
+    width: 110px;
+    height : 40px;
+    background-color: #27538E;
+    color : white;
+    border: 1px solid #06678A;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right : 70px;      
+}
+
+#mobile-icon{
+    display : none;
+}
+
+#small {
+    display: none;
+}
+
+.show{
+    right : 0px;
+}
+
+.hide{
+    right : -200px;
+}
+
+@media screen and (max-width : 1024px)
+{
+    #contact-us{
+        margin-right: -5px;
+    }
+}
+
+@media screen and (min-width : 0px) and (max-width: 720px)
+{
+    #mobile-icon{
+        display: block;
+        height : 30px;
+        width : 30px;
+        margin-left: auto;
+    }
+    #contact-us{
+        display: none;
+    }
+    #large {
+        display: none;
+    }
+    #small{
+        display: block;
+        height: 100%;
+        position: fixed;
+        top : 0;
+        width : 200px;
+        z-index: 1;
+        background-color:#27538E;
+        transition: right 0.6s ease;
+    }
+    #small ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height : 40%;
+        gap: 20px;
+    }
+    #small ul li{
+        color : white;
+        display: block;
+    }
+    #small ul li img{
+        display: none;
+    }
+
+    #small img{
+        width : 25px;
+        height : 25x;
+        padding: 15px;
+    }
+
+}
