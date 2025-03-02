@@ -1,0 +1,259 @@
+.services-page {
+  position: relative;
+  top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  padding: 32px 16px;
+  font-family: 'Urbanist';
+  height: 100vh;
+}
+
+.services-intro {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.services-intro__subtitle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: #414EC6;
+  border: 1px solid #D7DEFE;
+  border-radius: 16px;
+  background-color: #F5F5FF;
+  width: 102px;
+  height: 28px;
+  margin: 0 auto 8px auto;
+}
+
+.services-intro__title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #2B2B2B;
+  margin: 0 0 16px 0;
+}
+
+.services-intro__description {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 16px;
+  color: #475467;
+  line-height: 1.5;
+}
+
+
+.services-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.services-row {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+}
+
+
+.service-card {
+  position: relative;
+  background-color: #F9FAFB;
+  border-radius: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  width: 280px;
+  height: 362px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+
+}
+
+
+#card1,
+#card6 {
+  width: 592px;
+  height: 362px;
+}
+
+
+
+
+.card-icon {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  width: 48px;
+  height: 48px;
+}
+
+
+.service-card h3 {
+  position: relative;
+  top: 100px;
+  margin-top: 0;
+  font-size: 20px;
+  color: #1C1C1C;
+  margin-bottom: 12px;
+}
+
+.service-card p {
+  position: relative;
+  top: 80px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  color: #475467;
+  line-height: 1.4;
+}
+
+.service-link {
+  font-weight: 700;
+  font-size: 16px;
+  color: #3A6EB3;
+  text-decoration: none;
+  margin-top: auto;
+  position: relative;
+  bottom: 30px;
+}
+
+.service-link:hover {
+  text-decoration: underline;
+}
+
+/* Highlighted card (card2) */
+.highlight {
+  background-color: #1D315F;
+  color: #fff;
+  box-shadow: 0px 10px 30px rgba(29, 49, 95, 0.6);
+  border-radius: 20px;
+}
+
+
+.highlight h3,
+.highlight p,
+.highlight .service-link {
+  color: #fff;
+}
+
+.service-icon {
+  position: relative;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+
+
+
+
+
+@media (max-width: 1300px) {
+  .services-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .service-card {
+    position: relative !important;
+    width: 90%;
+    max-width: 500px;
+    padding: 20px;
+    z-index: 1;
+  }
+
+  .services-intro__title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .services-intro__description {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .card-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .service-link {
+    font-size: 1rem;
+  }
+
+
+  #card1,
+  #card6 {
+    flex-basis: auto;
+    width: 100%;
+    max-width: 500px;
+    padding: 25px;
+  }
+
+
+  .services-page {
+    padding: 20px;
+  }
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .services-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .service-card {
+    position: relative !important;
+    width: 90%;
+    max-width: 400px;
+    padding: 16px;
+    z-index: 1;
+  }
+
+  .services-intro__title {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .services-intro__description {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .card-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .service-link {
+    font-size: 0.9rem;
+  }
+
+  #card1,
+  #card6 {
+    flex-basis: auto;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+  }
+
+  .services-page {
+    padding: 16px;
+  }
+}
