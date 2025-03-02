@@ -1,5 +1,5 @@
 import React from "react";
-import "./ServicesIntro.css";
+import "../css/ServicesIntro.css";
 
 import aiIcon from "../assets/aiIcon.svg";
 import autoIcon from "../assets/autoIcon.svg";
@@ -10,7 +10,7 @@ import warrowIcon from "../assets/warrowIcon.svg";
 
 const ServicesIntro = () => {
   return (
-    <div className="services-page">
+    <div id="services" className="services-page">
       {/* INTRO SECTION */}
       <div className="services-intro">
         <span className="services-intro__subtitle">Our Services</span>
