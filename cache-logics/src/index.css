@@ -2,11 +2,6 @@
   font-family: 'Urbanist', sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 h1 {
@@ -14,6 +9,4 @@ h1 {
   line-height: 1.1;
 }
 
-html{
-  /* overflow: hidden; */
-}
+
