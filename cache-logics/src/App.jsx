@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from './components/Navbar';
 import ServicesIntro   from './pages/ServicesIntro';  
+import Standout  from './pages/Standout';
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <>
       <Navbar/>
       <ServicesIntro/>
+      <Standout />
     </>
   );
 }
