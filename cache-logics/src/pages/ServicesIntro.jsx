@@ -10,7 +10,7 @@ import warrowIcon from "../assets/warrowIcon.svg";
 
 const ServicesIntro = () => {
   return (
-    <div className="services-page">
+    <div className="services-page" id="services">
       {/* INTRO SECTION */}
       <div className="services-intro">
         <span className="services-intro__subtitle">Our Services</span>

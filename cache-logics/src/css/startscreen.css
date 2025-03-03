@@ -1,0 +1,230 @@
+#start-screen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    background: linear-gradient(270deg, rgba(29, 49, 95, 0) 0%, #1D315F 67.83%);
+    position: absolute;
+    width: 1100px;
+    height: 520px;
+    border-radius: 24px;
+    top: 100px;
+}
+#background-img{
+    border-radius: 23px;
+    position: relative;
+    height: 517px;
+    top:94px;
+    left: 157px;
+    transform: scaleX(-1);
+}
+
+.bg-container {
+    background-color : #27538E;
+    width: 930px;
+    height: 520px;
+    border: 2px solid white;
+    border-radius: 24px;
+    backdrop-filter: blur(10px);
+    position: absolute; /* REQUIRED for z-index to work */
+    z-index: -1;
+    top: 15px;
+    left : 20px;
+    opacity: 90%;
+    padding-right: 64px;
+    padding-left: 64px;
+}
+
+.content{
+    position: relative;
+    width : 35%;
+    height : 30%;
+    top : 25%;
+    left : 5%;
+}
+
+.content h1{
+    font-family: 'Urbanist';
+    font-weight: 700;
+    font-size: 2.2em;
+    letter-spacing: -2%;
+    color : white;
+}      
+
+.content p {
+    color : white;
+    font-weight: 400;
+    font-size: 0.9em;
+    margin-top : -15px;
+}
+
+.buttons:first-child{
+    background-color: white ;
+}
+#contact-btn{
+    background-color: transparent;
+    color : white;
+    border : 1px solid white;
+    margin-left: 10px;
+}
+
+.buttons button{
+    cursor: pointer;
+    margin-top : 20px;
+    font-weight: 700;
+    font-family: 'Urbanist';
+    border : 1px solid;
+    border-radius: 8px;
+    padding: 16px 22px 16px 22px;
+    height: 50px;
+    font-size: 0.9em;
+}
+
+#company-logos{
+    position: absolute;
+    width : 100%;
+    height : 28px;
+    bottom : 40px;
+}
+
+#company-text{
+    color : #475467;
+    margin-top : 145px;
+    font-weight: 500;
+    font-size: 0.9em;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+
+}
+
+
+@media screen and (min-width : 426px) and (max-width : 768px)
+{
+
+    .main-container{
+        width: 80%;
+        left: 5%;
+        height: 450px;
+    }
+
+    .bg-container{
+        left: 4%;
+ 	    width : 79%;
+        top : 5px;
+        height : 453px;
+
+    }
+
+    #background-img{
+        width: 79%;
+        left : 25px;
+        height: 447px;
+
+    }
+
+    .content {
+        width : 50%;
+    }
+    .content h1{
+        font-size: 1.9em;
+    }
+
+    .buttons{
+        width: 350px;
+    }
+    
+
+}
+
+@media screen and (min-width : 769px ) and (max-width : 1024px)
+{
+
+    .main-container{
+        width: 90%;
+        height: 555px;
+    }
+
+    .bg-container{
+        width: 85%;
+        height: 555px;
+        top: 10px;
+        left: 3%;
+    }
+
+    #background-img{
+        width: 79%;
+        left : 9%;
+        height : 550px;
+    }
+    #company-text{
+        margin-top: 150px;
+    }
+    #company-logos{
+        bottom: 150px;
+    }
+}
+
+@media screen and (max-width : 425px)
+{
+    .main-container{
+      width: 360px;
+	  height: 380px;
+      left: 19px;
+    }
+
+    #background-img{
+      width: 300px;
+      height: 378px;
+ 	  top: 94px;
+ 	  left: 29px; 		
+    }
+    .bg-container{
+        width: 219px;
+        left : 11px;
+        height: 380px;
+        top:5px;
+    }
+
+
+.buttons button{
+            padding: 0;
+     		width: 107px;
+     		height: 34px;
+    	    font-size: 9px;
+    }
+    .content {
+        width: 70%;
+        top: 39%;
+    }
+    .content h1{
+        font-size: 1.8em;
+    }
+    .content p {
+        font-size: 0.6em;
+        margin-top: -17px;
+    }
+    #company-logos {
+        width: 88%;
+        bottom: 84px;
+    }
+
+}
+
+@media screen and (max-width : 375px)
+{
+    .bg-container{
+        width: 197px;
+    }
+}
+
+@media screen and (min-width : 1440px)
+{
+    #company-logos{
+        bottom :0;
+        top : 800px;
+    }
+}

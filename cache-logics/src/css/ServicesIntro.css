@@ -1,3 +1,6 @@
+#services{
+  margin-top : 150px;
+}
 .services-page {
   position: relative;
   top: 50px;
@@ -78,7 +81,7 @@
 
 #card1,
 #card6 {
-  width: 592px;
+  width: 640px;
   height: 362px;
 }
 
