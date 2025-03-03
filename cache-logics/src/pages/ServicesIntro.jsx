@@ -1,5 +1,5 @@
 import React from "react";
-import "./ServicesIntro.css";
+import "../css/ServicesIntro.css";
 
 import aiIcon from "../assets/aiIcon.svg";
 import autoIcon from "../assets/autoIcon.svg";

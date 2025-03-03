@@ -1,5 +1,5 @@
 import React from "react";
-import "./Standout.css";
+import "../css/Standout.css";
 
 import teamImage from "../assets/stout.svg";
 
