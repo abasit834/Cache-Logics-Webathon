@@ -61,7 +61,7 @@
     margin-top : -15px;
 }
 
-.buttons:first-child{
+#discover-btn{
     background-color: white ;
 }
 #contact-btn{
@@ -84,10 +84,9 @@
 }
 
 #company-logos{
-    position: absolute;
+    margin-top: auto;
     width : 100%;
     height : 28px;
-    bottom : 40px;
 }
 
 #company-text{
@@ -96,7 +95,6 @@
     font-weight: 500;
     font-size: 0.9em;
     line-height: 24px;
-    letter-spacing: 0%;
     text-align: center;
 
 }
@@ -163,9 +161,6 @@
     #company-text{
         margin-top: 150px;
     }
-    #company-logos{
-        bottom: 150px;
-    }
 }
 
 @media screen and (max-width : 425px)
@@ -207,10 +202,6 @@
         font-size: 0.6em;
         margin-top: -17px;
     }
-    #company-logos {
-        width: 88%;
-        bottom: 84px;
-    }
 
 }
 
@@ -221,10 +212,3 @@
     }
 }
 
-@media screen and (min-width : 1440px)
-{
-    #company-logos{
-        bottom :0;
-        top : 800px;
-    }
-}

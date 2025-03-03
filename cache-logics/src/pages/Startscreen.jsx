@@ -16,7 +16,7 @@ const Startscreen =()=>{
                   <h1>Fast-Tracking Your AI Evolution</h1>
                   <p>Empowering businesses with cutting-edge technology and tailored solutions.</p>
                   <div className="buttons">
-                    <button>Discover Our Services</button>
+                    <button id="discover-btn">Discover Our Services</button>
                     <button id="contact-btn">Contact Us</button>
              </div>
              </div>
