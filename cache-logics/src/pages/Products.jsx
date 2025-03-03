@@ -1,5 +1,5 @@
 import React from "react";
-import "./Products.css";
+import "../css//Products.css";
 
 
 import product1Img from "../assets/product1.svg";
