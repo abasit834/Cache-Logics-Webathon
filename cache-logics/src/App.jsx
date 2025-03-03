@@ -1,7 +1,9 @@
 import React from 'react'
 import Navbar from './components/Navbar';
-import ServicesIntro   from './pages/ServicesIntro';  
 import Startscreen from './pages/Startscreen';
+import ServicesIntro   from './pages/ServicesIntro';  
+import Standout  from './pages/Standout';
+import Products from './pages/Products';
 
 function App() {
 
@@ -10,6 +12,8 @@ function App() {
       <Navbar/>
       <Startscreen/>
       <ServicesIntro/>
+      <Standout/>
+      <Products/>
     </>
   );
 }
