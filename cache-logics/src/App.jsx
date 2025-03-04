@@ -6,6 +6,7 @@ import Standout  from './pages/Standout';
 import Products from './pages/Products';
 import Locations from './pages/Locations';
 import ContactUs from './pages/Contactus';
+import Footer from './pages/footer';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Products/>
       <Locations/>
       <ContactUs/>
+      <Footer />
     </>
   );
 }
