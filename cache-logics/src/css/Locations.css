@@ -1,0 +1,160 @@
+.location-page
+{
+    width : 100%;
+    height: 100%;
+    margin : 0 auto;
+    max-width: 1280px;
+    margin-top : 50px;
+}
+
+  .world-image{
+    display: flex;
+    justify-content: center;
+    width : 100%;
+    margin-top : 40px;
+  }
+
+  .world-image img {
+    width : 90%;
+  }
+
+.countries{
+    margin-top : 5%;
+    width : 100%;
+    height : 136px;
+    display : flex;
+    justify-content: space-evenly;
+}
+
+.countries div{
+    width: 30%;
+    height: fit-content;
+}
+
+.countries h3{
+font-weight: 600;
+font-size: 20px;
+text-align: center;
+}
+
+.countries div p {
+    text-align: center;
+    font-weight: 300;
+    font-size: 16px;
+    margin-top : -10px;
+    color :#475467;
+}
+.countries span{
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    color : #415EC6;
+}
+
+@media (max-width: 1280px) {
+    .locations-intro__title {
+      font-size: 28px;
+    }
+  
+    .locations-intro__description {
+      font-size: 15px;
+    }
+  
+    .countries h3 {
+      font-size: 18px;
+    }
+  
+    .countries div p,
+    .countries span {
+      font-size: 15px;
+    }
+  }
+  
+  /* Medium screens (Tablets) */
+  @media (max-width: 1024px) {
+    .locations-intro__subtitle {
+      font-size: 13px;
+      width: 95px;
+      height: 26px;
+    }
+  
+    .locations-intro__title {
+      font-size: 26px;
+    }
+  
+    .locations-intro__description {
+      font-size: 14px;
+    }
+  
+    .countries h3 {
+      font-size: 17px;
+    }
+  
+    .countries div p,
+    .countries span {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .locations-intro__subtitle {
+      font-size: 12px;
+      width: 90px;
+      height: 24px;
+    }
+  
+    .locations-intro__title {
+      font-size: 24px;
+    }
+  
+    .locations-intro__description {
+      font-size: 13px;
+    }
+  
+    .countries {
+      flex-direction: column;
+      height: auto;
+      align-items: center;
+    }
+  
+    .countries div {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  
+    .countries h3 {
+      font-size: 16px;
+    }
+  
+    .countries div p,
+    .countries span {
+      font-size: 13px;
+    }
+  }
+  
+ 
+  @media (max-width: 480px) {
+    .locations-intro__subtitle {
+      font-size: 11px;
+      width: 85px;
+      height: 22px;
+    }
+  
+    .locations-intro__title {
+      font-size: 22px;
+    }
+  
+    .locations-intro__description {
+      font-size: 12px;
+    }
+  
+    .countries h3 {
+      font-size: 15px;
+    }
+  
+    .countries div p,
+    .countries span {
+      font-size: 12px;
+    }
+  }

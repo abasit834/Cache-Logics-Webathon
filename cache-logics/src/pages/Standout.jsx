@@ -1,5 +1,6 @@
 import React from "react";
 import "../css/Standout.css";
+import Title from "../components/Title"
 
 import teamImage from "../assets/stout.svg";
 
@@ -11,17 +12,11 @@ const Standout = () => {
   return (
     <div className="standout-page">
 
-      <div className="standout-intro">
-        <span className="standout-intro__subtitle">Why Us</span>
-        <h2 className="standout-intro__title">How does Cache Logic stands out?</h2>
-        <p className="standout-intro__description">
-          At Cache Logic, we are a passionate team of tech experts dedicated to powering
+      <Title s_title="Why Us" intro="How does Cache Logic stands out?" desc=" At Cache Logic, we are a passionate team of tech experts dedicated to powering
           your IT evolution. Founded by industry leaders with diverse expertise, we focus
           on delivering innovative, reliable, and scalable tech solutions—from AI and
           automation to cybersecurity and app development. Our mission is simple: help
-          your business stay ahead in a digital world.
-        </p>
-      </div>
+          your business stay ahead in a digital world."/>
 
 
       <div className="standout-image-container">

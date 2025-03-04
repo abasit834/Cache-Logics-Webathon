@@ -4,6 +4,10 @@ import Startscreen from './pages/Startscreen';
 import ServicesIntro   from './pages/ServicesIntro';  
 import Standout  from './pages/Standout';
 import Products from './pages/Products';
+import Locations from './pages/Locations';
+import ContactUs from './pages/Contactus';
+import Team from './pages/Team';
+
 
 function App() {
 
@@ -14,6 +18,9 @@ function App() {
       <ServicesIntro/>
       <Standout/>
       <Products/>
+      <Team/>
+      <Locations/>
+      <ContactUs/>
     </>
   );
 }

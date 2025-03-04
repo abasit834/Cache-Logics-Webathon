@@ -1,5 +1,6 @@
 import React from "react";
 import "../css//Products.css";
+import Title from "../components/Title";
 
 
 import product1Img from "../assets/product1.svg";
@@ -12,15 +13,9 @@ import patternImg from "../assets/pattern.svg";
 const Products = () => {
     return (
         <div className="products-page">
-
-            <div className="products-intro">
-                <span className="products-intro__subtitle">Our Portfolio</span>
-                <h2 className="products-intro__title">Products We Have Worked On</h2>
-                <p className="products-intro__description">
-                    Powerful, self-serve product and growth analytics to help you convert,
-                    engage, and retain more users. Trusted by over 4,000 startups.
-                </p>
-            </div>
+            
+        <Title s_title="Our Portfolio" intro="Products We Have Worked On" desc="Powerful, self-serve product and growth analytics to help you convert,
+                    engage, and retain more users. Trusted by over 4,000 startups."/>
 
             {/* ====== PRODUCT #1 ====== */}
             <div className="product product1">
