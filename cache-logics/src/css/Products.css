@@ -43,6 +43,7 @@
 }
 
 .product-btn {
+  font-family: 'Urbanist';
   padding: 12px 24px;
   border: none;
   border-radius: 8px;
@@ -51,7 +52,6 @@
   cursor: pointer;
 
 }
-
 
 .primary-btn {
   background-color: white;
