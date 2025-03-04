@@ -1,18 +1,13 @@
 import React from "react";
 import '../css/Locations.css';
 import world from '../assets/Content.svg';
+import Title from "../components/Title";
 
 const Locations =()=>{
     return (
         <div className="location-page">
 
-        <div className="locations-intro">
-                <span className="locations-intro__subtitle">Our Location</span>
-                <h2 className="locations-intro__title">We Are WORLDWIDE</h2>
-                <p className="locations-intro__description">
-                 We help our clients from almost every part of the world.
-                </p>
-        </div>
+        <Title s_title="Our Location" intro="We Are WORLDWIDE" desc="We help our clients from almost every part of the world."/>
 
         <div className="world-image">
           <img src={world} alt="" />  

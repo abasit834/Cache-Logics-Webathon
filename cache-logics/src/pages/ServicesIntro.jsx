@@ -1,5 +1,6 @@
 import React from "react";
 import "../css/ServicesIntro.css";
+import Title from "../components/Title";
 
 import aiIcon from "../assets/aiIcon.svg";
 import autoIcon from "../assets/autoIcon.svg";
@@ -11,15 +12,9 @@ import warrowIcon from "../assets/warrowIcon.svg";
 const ServicesIntro = () => {
   return (
     <div className="services-page" id="services">
-      {/* INTRO SECTION */}
-      <div className="services-intro">
-        <span className="services-intro__subtitle">Our Services</span>
-        <h2 className="services-intro__title">Services We Offer</h2>
-        <p className="services-intro__description">
-          Powerful, self-serve product and growth analytics to help you convert,
-          engage, and retain more users.
-        </p>
-      </div>
+    
+      <Title s_title="Our Services" intro="Services We Offer" desc="Powerful, self-serve product and growth analytics to help you convert,
+          engage, and retain more users."/>
 
       {/* SERVICE CARDS */}
       <div className="services-list">
