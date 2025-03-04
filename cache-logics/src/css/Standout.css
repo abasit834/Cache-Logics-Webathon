@@ -1,6 +1,4 @@
 .standout-page {
-  position: relative;
-  top: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -127,10 +125,10 @@
 
 @media (max-width: 1300px) {
 
-  .standout-page {
+  /* .standout-page {
     position: relative;
     top: 2000px;
-  }
+  } */
 
   .standout-image-container {
     width: 90%;
@@ -179,10 +177,10 @@
     bottom: 10px;
   }
 
-  .standout-page {
+  /* .standout-page {
 
     margin: 2rem auto;
     position: relative;
     top: 1900px;
-  }
+  } */
 }
