@@ -9,20 +9,20 @@ import callIcon from "../assets/callIcon.svg";
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="footer-hero">
-        <div className="footer-hero-text">
-          <h2 className="footer-hero-title">
+    <footer className="gnb-lsk-s9">
+      <div className="urh-lkk-s8">
+        <div className="zxc-h-txt">
+          <h2 className="zxc-h-ttl">
             Innovating IT solutions for the modern world.
           </h2>
-          <p className="footer-hero-subtitle">
+          <p className="zxc-h-stl">
             Empowering businesses with cutting-edge technology and <br /> 
             tailored solutions.
           </p>
         </div>
-        <div className="footer-hero-buttons">
-          <button className="footer-btn primary-btn">Discover Our Services</button>
-          <button className="footer-btn secondary-btn">
+        <div className="zxc-h-btns">
+          <button className="btn-x11 p-btn-x11">Discover Our Services</button>
+          <button className="btn-x11 s-btn-x11">
             <img src={callIcon} alt="Call Icon" />
             <span>Contact Us</span>
           </button>
@@ -30,35 +30,35 @@ const Footer = () => {
       </div>
 
       {/* Large background text */}
-      <div className="footer-bg-text">cache logic</div>
+      <div className="bg-txt-lkj">cache logic</div>
 
-      <div className="footer-line"></div>
+      <div className="line-lkj"></div>
 
-      <div className="footer-content">
-        <div className="footer-left">
-          <div className="footer-logo">
-            <h1 className="h1logo">
+      <div className="ppp-cnt-12">
+        <div className="qwe-lft-5">
+          <div className="logo-lkj">
+            <h1 className="h1lg-lkj">
               <img src={logoIcon} alt="Cache Logic Logo" /> Cache Logic
             </h1>
           </div>
-          <p className="footer-description">
+          <p className="desc-lkj">
             Cache Logic is a global IT services firm committed to powering 
             your business with innovative tech solutions.
           </p>
-          <p className="footer-copyright">
+          <p className="ccc-rights">
             © 2027 Cache Logic. All rights reserved.
           </p>
         </div>
 
-        <div className="footer-right">
-          <h4 className="footer-column-title">Company</h4>
-          <ul className="footer-links">
+        <div className="rty-rgt-5">
+          <h4 className="c-ttl-lkj">Company</h4>
+          <ul className="llinks-lkj">
             <li>About us</li>
             <li>Careers</li>
             <li>News</li>
             <li>Contact</li>
           </ul>
-          <div className="footer-icons">
+          <div className="ic-lkj">
             <img src={socialIcon1} alt="Social Icon 1" />
             <img src={socialIcon2} alt="Social Icon 2" />
             <img src={socialIcon3} alt="Social Icon 3" />
@@ -67,7 +67,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="footer-line"></div>
+      <div className="line-lkj"></div>
     </footer>
   );
 };

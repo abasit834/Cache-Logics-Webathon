@@ -1,5 +1,5 @@
-.footer {
-    position: absolute;
+.gnb-lsk-s9 {
+    position: relative;
     background-color: #0C111D;
     color: #fff;
     padding: 40px;
@@ -8,45 +8,45 @@
     height: 690px;
     z-index: 1;
     width: 100%;
-}
-
-.footer-hero,
-.footer-content {
+  }
+  
+  .urh-lkk-s8,
+  .ppp-cnt-12 {
     position: relative;
     z-index: 2;
-}
-
-.footer-hero {
+  }
+  
+  .urh-lkk-s8 {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 40px;
-}
-
-.footer-hero-text {
+  }
+  
+  .zxc-h-txt {
     max-width: 600px;
     position: relative;
     left: 100px;
-}
-
-.footer-hero-title {
+  }
+  
+  .zxc-h-ttl {
     font-size: 30px;
     font-weight: 600;
     margin: 0 0 8px;
-}
-
-.footer-hero-subtitle {
+  }
+  
+  .zxc-h-stl {
     font-size: 20px;
     color: #D3D3D3;
     margin: 0;
-}
-
-.footer-hero-buttons {
+  }
+  
+  .zxc-h-btns {
     display: flex;
     gap: 16px;
-}
-
-.footer-btn {
+  }
+  
+  .btn-x11 {
     padding: 12px 24px;
     border-radius: 8px;
     cursor: pointer;
@@ -55,36 +55,35 @@
     border: none;
     position: relative;
     right: 90px;
-}
-
-.primary-btn {
+  }
+  
+  .p-btn-x11 {
     background-color: #fff;
     color: #344054;
     width: 244px;
     height: 60px;
-}
-
-.secondary-btn {
+  }
+  
+  .s-btn-x11 {
     background-color: transparent;
     color: #fff;
     border: 1px solid #fff;
     width: 181px;
     height: 60px;
-}
-
-.secondary-btn span {
+  }
+  
+  .s-btn-x11 span {
     position: relative;
     bottom: 5px;
-}
-
-.secondary-btn img {
+  }
+  
+  .s-btn-x11 img {
     position: relative;
     top: 3px;
     right: 9px;
-}
-
-
-.footer-bg-text {
+  }
+  
+  .bg-txt-lkj {
     position: absolute;
     left: 50%;
     bottom: 40px;
@@ -98,21 +97,17 @@
     font-weight: 500;
     z-index: 0;
     white-space: nowrap;
-    
-    
-}
-
-
-.footer-line {
+  }
+  
+  .line-lkj {
     width: 100%;
     height: 2px;
     background-color: #2B2B2B;
     margin: 20px 0;
     opacity: 0.5;
-}
-
-
-.footer-content {
+  }
+  
+  .ppp-cnt-12 {
     position: relative;
     z-index: 1;
     max-width: 1200px;
@@ -120,197 +115,212 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-}
-
-.footer-left {
+  }
+  
+  .qwe-lft-5 {
     position: relative;
     left: -250px;
     top: -20px;
     max-width: 300px;
-}
-
-.footer-logo {
+  }
+  
+  .logo-lkj {
     position: relative;
     left: 0;
     top: 20px;
-}
-
-.footer-logo img {
+  }
+  
+  .logo-lkj img {
     width: 32.3px;
     height: 27.22px;
     margin-bottom: 16px;
     position: relative;
     top: 20px;
-}
-
-.footer-description {
+  }
+  
+  .desc-lkj {
     margin-bottom: 24px;
     font-size: 16px;
     line-height: 1.5;
     color: #D3D3D3;
-}
-
-.footer-right {
-
+  }
+  
+  .rty-rgt-5 {
     position: relative;
     right: 690px;
     top: 20px;
     min-width: 200px;
-}
-
-.footer-column-title {
+  }
+  
+  .c-ttl-lkj {
     font-size: 14px;
     font-weight: 300;
     margin-bottom: 16px;
     opacity: 0.6;
-}
-
-.footer-links {
+  }
+  
+  .llinks-lkj {
     list-style: none;
     margin: 0 0 24px 0;
     padding: 0;
     font-size: 16px;
     font-weight: 700;
-}
-
-.footer-links li {
+  }
+  
+  .llinks-lkj li {
     margin-bottom: 8px;
     cursor: pointer;
     transition: color 0.3s;
-}
-
-.footer-links li:hover {
+  }
+  
+  .llinks-lkj li:hover {
     color: #B0B0B0;
-}
-
-.footer-icons {
+  }
+  
+  .ic-lkj {
     display: flex;
     gap: 16px;
     align-items: center;
     position: relative;
     left: 1000px;
     bottom: 50px;
-}
-
-.footer-copyright {
+  }
+  
+  .ccc-rights {
     opacity: 0.4;
-}
-
-
-@media (max-width: 1856px) {
-    .footer {
-        height: auto;
-        padding: 60px 20px;
+  }
+  
+  /* Responsive for < 1856px */
+  @media (max-width: 1856px) {
+    .gnb-lsk-s9 {
+      height: auto;
+      padding: 60px 20px;
     }
-
-    .footer-bg-text {
-        display: none !important;
+  
+    .bg-txt-lkj {
+      display: none !important;
     }
-
-    .footer-hero {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        margin-bottom: 40px;
+  
+    .urh-lkk-s8 {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 40px;
     }
-
-    .footer-hero-text {
+  
+    .zxc-h-txt {
+      left: 0 !important;
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    .zxc-h-btns {
+      margin-top: 16px;
+      justify-content: center;
+    }
+  
+    .ppp-cnt-12 {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 40px;
+      text-align: center;
+    }
+  
+    .qwe-lft-5,
+    .rty-rgt-5 {
+      position: static !important;
+      max-width: 90%;
+      margin-bottom: 20px;
+    }
+  
+    .ic-lkj {
+        position: static !important;  /* remove forced positioning */
         left: 0 !important;
-        max-width: 100%;
-        text-align: center;
-    }
-
-    .footer-hero-buttons {
-        margin-top: 16px;
-        justify-content: center;
-    }
-
-    .footer-content {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 40px;
-        text-align: center;
-    }
-
-    .footer-left,
-    .footer-right {
-        position: static !important;
-        max-width: 90%;
-        margin-bottom: 20px;
-    }
-
-    .footer-icons {
-        position: static !important;
+        right: 0 !important;
         margin: 0 auto;
-    }
-}
-
-
-@media (max-width: 786px) {
-    .footer {
-        padding: 20px 10px;
-        height: auto;
-        top: 0;
-    }
-
-    .footer-bg-text {
-        display: none !important;
-    }
-
-    .footer-btn {
-        font-size: 12px;
-    }
-
-    .primary-btn {
-        background-color: #fff;
-        color: #344054;
-        width: 150px;
-        height: 60px;
-    }
-
-    .secondary-btn {
-        background-color: transparent;
-        color: #fff;
-        border: 1px solid #fff;
-        width: 140px;
-        height: 60px;
-    }
-
-    .footer-hero {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .footer-hero-text {
-        max-width: 100%;
-        text-align: center;
-    }
-
-    .footer-hero-buttons {
-        margin-top: 16px;
-        justify-content: center;
-        size: 14px;
-    }
-
-    .footer-content {
-        margin-top: 20px;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .footer-left,
-    .footer-right {
-        max-width: 90%;
-        margin-bottom: 20px;
-        text-align: center;
+        display: flex;
+        justify-content: center;      /* center the icons horizontally */
+      }
+    .btn-x11 {
         position: static !important;
+        right: 0 !important;
+      }
+  }
+  
+  /* Responsive for < 786px */
+  @media (max-width: 786px) {
+    .gnb-lsk-s9 {
+      padding: 20px 10px;
+      height: auto;
+      top: 0;
     }
-
-    .footer-icons {
-        position: static !important;
+  
+    .bg-txt-lkj {
+      display: none !important;
+    }
+  
+    .btn-x11 {
+      font-size: 12px;
+    }
+  
+    .p-btn-x11 {
+      background-color: #fff;
+      color: #344054;
+      width: 150px;
+      height: 60px;
+    }
+  
+    .s-btn-x11 {
+      background-color: transparent;
+      color: #fff;
+      border: 1px solid #fff;
+      width: 140px;
+      height: 60px;
+    }
+  
+    .urh-lkk-s8 {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .zxc-h-txt {
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    .zxc-h-btns {
+      margin-top: 16px;
+      justify-content: center;
+    
+    }
+  
+    .ppp-cnt-12 {
+      margin-top: 20px;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .qwe-lft-5,
+    .rty-rgt-5 {
+      max-width: 90%;
+      margin-bottom: 20px;
+      text-align: center;
+      position: static !important;
+    }
+  
+    .ic-lkj {
+        position: static !important;  /* remove forced positioning */
+        left: 0 !important;
+        right: 0 !important;
         margin: 0 auto;
-    }
-}
+        display: flex;
+        justify-content: center;      /* center the icons horizontally */
+      }
+    .btn-x11 {
+        position: static !important;
+        right: 0 !important;
+      }
+  }
+  
