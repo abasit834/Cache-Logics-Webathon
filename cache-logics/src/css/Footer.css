@@ -202,6 +202,43 @@
   .ccc-rights {
     opacity: 0.4;
   }
+
+/* Smooth transition for transform (scaling) */
+.btn-x11 {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  /* Slightly bigger on hover */
+  .btn-x11:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Optional: change background on hover for primary button */
+  .p-btn-x11:hover {
+    background-color: #e5e5e5; /* lighter gray */
+    color: #000;
+  }
+  
+  /* Optional: change background on hover for secondary button */
+  .s-btn-x11:hover {
+    background-color: #344054; /* match text color? */
+    color: #fff;
+    border-color: #344054; /* unify border */
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
   
   /* Responsive for < 1706px */
   @media (max-width: 1706px) {

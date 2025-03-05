@@ -1,5 +1,6 @@
 import React from "react";
 import "../css/Footer.css";
+import "../index.css";
 import logoIcon from "../assets/logoIcon.svg";
 import socialIcon1 from "../assets/socialIcon1.svg";
 import socialIcon2 from "../assets/socialIcon2.svg";

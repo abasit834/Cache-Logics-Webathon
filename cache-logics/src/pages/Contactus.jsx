@@ -1,5 +1,6 @@
 import React from "react";
 import "../css/Contactus.css"
+import "../index.css"
 import email from "../assets/mail-01.svg";
 import phone from "../assets/mobile-icon.svg";
 import office from "../assets/Icon-2.svg";

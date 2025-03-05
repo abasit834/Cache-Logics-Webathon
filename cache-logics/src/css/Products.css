@@ -1,3 +1,44 @@
+/* Initially hide products */
+.product {
+  opacity: 0;
+}
+
+/* Animation classes */
+.animate-left {
+  animation: slideInLeft 0.8s ease-out forwards;
+}
+
+.animate-right {
+  animation: slideInRight 0.8s ease-out forwards;
+}
+
+/* Keyframes for sliding in from the left */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Keyframes for sliding in from the right */
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+
+
 .products-page {
   width: 100%;
   height : 100%;
@@ -69,6 +110,13 @@
   width: 138px;
 
 }
+.secondary-btn:hover {
+  background-color: #fff;
+  color: #27538E;
+  border: 1px solid #27538E;
+}
+
+
 
 
 .product-image-container {
@@ -147,6 +195,15 @@
   vertical-align: middle;
   position: relative;
   bottom: 2px;
+}
+
+
+.product-btn {
+  transition: transform 0.2s ease-in-out;
+}
+
+.product-btn:hover {
+  transform: scale(1.05);
 }
 
 

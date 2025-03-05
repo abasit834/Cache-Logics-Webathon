@@ -1,3 +1,41 @@
+header {
+    /* Your existing styles remain unchanged */
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    
+    /* Apply the animation */
+    animation: navbarReveal 1.5s ease-out forwards;
+  }
+  
+  /* Keyframes for the navbar reveal effect */
+  @keyframes navbarReveal {
+    0% {
+      filter: blur(8px);
+      opacity: 0;
+      transform: scale(0.95) translateX(-50px);
+    }
+    50% {
+      filter: blur(4px);
+      opacity: 0.5;
+      transform: scale(0.95) translateX(-25px);
+    }
+    100% {
+      filter: blur(0);
+      opacity: 1;
+      transform: scale(0.95) translateX(0);
+    }
+  }
+  
+
+
 header{
     overflow: hidden;
     box-sizing: border-box;
@@ -26,20 +64,28 @@ nav li img {
     margin-bottom: 1px;
 }
 
-#contact-us{
+#contact-us {
     font-family: 'Urbanist';
     width: 110px;
-    height : 40px;
+    height: 40px;
     background-color: #27538E;
-    color : white;
+    color: white;
     border: 1px solid #06678A;
     border-radius: 8px;
     font-weight: 600;
     font-size: 16px;
     cursor: pointer;
     margin-left: auto;
-    margin-right : 70px;      
+    margin-right: 70px;
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
+
+#contact-us:hover {
+    transform: scale(1.05);
+    background-color: white;
+    color :#27538E;
+}
+
 
 #mobile-icon{
     display : none;

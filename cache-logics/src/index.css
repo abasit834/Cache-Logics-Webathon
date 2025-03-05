@@ -13,3 +13,7 @@ html
 button{
   cursor: pointer;
 }
+
+button:hover  {
+  background-color: #f1f1f1;
+}

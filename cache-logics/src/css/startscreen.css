@@ -1,3 +1,29 @@
+@keyframes pixelateReveal {
+    0% {
+      filter: blur(20px);
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    50% {
+      filter: blur(10px);
+      opacity: 0.6;
+      transform: scale(0.98);
+    }
+    100% {
+      filter: blur(0px);
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  #background-img {
+    animation: pixelateReveal 1.5s ease-out forwards;
+  }
+  
+
+
+
+
 #start-screen{
     display: flex;
     flex-direction: column;
@@ -26,7 +52,7 @@
     background-color : #27538E;
     width: 930px;
     height: 520px;
-    border: 2px solid white;
+    border: 2px solid #27538E;
     border-radius: 24px;
     backdrop-filter: blur(10px);
     position: absolute; /* REQUIRED for z-index to work */
@@ -36,7 +62,19 @@
     opacity: 90%;
     padding-right: 64px;
     padding-left: 64px;
+    box-shadow: 0px 10px 20px rgba(29, 49, 95, 0.6);
 }
+
+#company-logos, 
+#company-text {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#company-logos:hover, 
+#company-text:hover {
+  transform: scale(1.09);
+}
+
 
 .content{
     position: relative;
@@ -99,6 +137,14 @@
 
 }
 
+.buttons button {
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  }
+  
+  .buttons button:hover {
+    transform: scale(1.05);
+  }
+  
 
 @media screen and (min-width : 426px) and (max-width : 768px)
 {

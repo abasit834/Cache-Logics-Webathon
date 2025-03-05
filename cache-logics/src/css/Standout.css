@@ -11,6 +11,11 @@
 }
 
 
+
+
+
+
+
 .standout-intro {
   text-align: center;
   max-width: 800px;
@@ -42,6 +47,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+ 
 }
 
 
@@ -54,9 +60,13 @@
   flex-direction: column;
   padding: 24px;
   text-align: center;
+  transition: transform 0.3s ease !important;
 
 }
 
+.standout-card:hover {
+  transform: translateY(-10px) !important;
+}
 .standout-card__icon {
   width: 48px;
   height: 48px;

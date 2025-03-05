@@ -34,6 +34,13 @@
     height: 48px;
     color : white;
     background-color: #1D315F;
+    border:1px solid #1D315F;
+    
+}
+#hiring:hover{
+
+    background-color: white;
+    color:#1D315F
     
 }
 
@@ -149,6 +156,30 @@
     font-size: 15px;
     margin-top: -20px;
 }
+.team-btns button {
+    margin-left: 6px;
+    font-family: 'Urbanist';
+    font-size: 16px;
+    font-weight: 700;
+    padding: 12px 18px;
+    border-radius: 8px;
+    border-width: 1px;
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  }
+  
+  .team-btns button:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Optional hover effects for specific buttons if needed */
+  #principles:hover {
+    background-color: #f2f2f2; /* lighter background on hover */
+    color: #000;
+  }
+  
+
+  
+
 
 /* Tablets (max-width: 1024px) */
 @media screen and (max-width: 1024px) {
