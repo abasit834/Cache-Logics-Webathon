@@ -20,7 +20,7 @@ const Products = () => {
     const observerCallback = (entries, observer) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          // Add appropriate animation class based on data attribute
+          
           entry.target.classList.add(entry.target.dataset.animation);
           observer.unobserve(entry.target);
         }

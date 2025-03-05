@@ -1,9 +1,9 @@
-/* Initially hide products */
+
 .product {
   opacity: 0;
 }
 
-/* Animation classes */
+
 .animate-left {
   animation: slideInLeft 0.8s ease-out forwards;
 }
@@ -12,7 +12,7 @@
   animation: slideInRight 0.8s ease-out forwards;
 }
 
-/* Keyframes for sliding in from the left */
+
 @keyframes slideInLeft {
   from {
     opacity: 0;
@@ -24,7 +24,7 @@
   }
 }
 
-/* Keyframes for sliding in from the right */
+
 @keyframes slideInRight {
   from {
     opacity: 0;
