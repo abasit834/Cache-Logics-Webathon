@@ -5,7 +5,6 @@
   margin: 0 auto;
   padding: 40px 16px;
   font-family: 'Urbanist';
-  margin-top: 400px;
 }
 
 .product {
@@ -44,6 +43,7 @@
 }
 
 .product-btn {
+  font-family: 'Urbanist';
   padding: 12px 24px;
   border: none;
   border-radius: 8px;
@@ -52,7 +52,6 @@
   cursor: pointer;
 
 }
-
 
 .primary-btn {
   background-color: white;
@@ -154,8 +153,8 @@
 @media (max-width: 1300px) {
   .products-page {
     padding: 20px 16px;
-    position: relative;
-    top: 2000px;
+    /* position: relative;
+    top: 2000px; */
     max-width: 100%;
   }
 
@@ -236,8 +235,8 @@
 @media (max-width: 786px) {
   .products-page {
     padding: 10px 8px;
-    position: relative;
-    top: 2000px;
+    /* position: relative;
+    top: 2000px; */
   }
 
   .products-intro__title {
