@@ -30,6 +30,7 @@ const Footer = () => {
       </div>
 
       {/* Large background text */}
+      
       <div className="bg-txt-lkj">cache logic</div>
 
       <div className="line-lkj"></div>
@@ -58,16 +59,20 @@ const Footer = () => {
             <li>News</li>
             <li>Contact</li>
           </ul>
+         
+        </div>
+       
           <div className="ic-lkj">
             <img src={socialIcon1} alt="Social Icon 1" />
             <img src={socialIcon2} alt="Social Icon 2" />
             <img src={socialIcon3} alt="Social Icon 3" />
             <img src={socialIcon4} alt="Social Icon 4" />
+            
           </div>
-        </div>
-      </div>
-
-      <div className="line-lkj"></div>
+          
+          </div>
+          <div className="line-lkj2"></div>
+        
     </footer>
   );
 };
