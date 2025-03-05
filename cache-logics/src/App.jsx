@@ -9,18 +9,20 @@ import ContactUs from './pages/Contactus';
 import Footer from './pages/footer';
 import Team from './pages/Team';
 
+
 function App() {
 
   return (
     <>
-      {/* <Navbar/>
+      <Navbar/>
       <Startscreen/>
       <ServicesIntro/>
       <Standout/>
-      <Products/> */}
+      <Products/>
       <Team/>
       <Locations/>
       <ContactUs/>
+      <Footer/>
     </>
   );
 }
