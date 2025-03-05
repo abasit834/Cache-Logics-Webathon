@@ -1,13 +1,15 @@
 .gnb-lsk-s9 {
-    position: relative;
-    width: 100%;
+    position: absolute;
+    left : 0;
+    margin-top: 300px;
+    width: 100vw;
     max-width: none;
     background-color: #0C111D;
     color: #fff;
     padding: 40px;
     overflow: hidden;
     font-family: 'Urbanist';
-    height: 710px;
+    height: 100vh;
     z-index: 1;
   }
   
@@ -58,6 +60,7 @@
   }
   
   .btn-x11 {
+    font-family: 'Urbanist';
     padding: 12px 24px;
     border-radius: 8px;
     cursor: pointer;
@@ -227,18 +230,6 @@
   }
   
 
-
-
-
-
-
-
-
-
-
-
-
-
   
   /* Responsive for < 1706px */
   @media (max-width: 1706px) {
@@ -308,7 +299,6 @@
     .gnb-lsk-s9 {
       padding: 20px 10px;
       height: auto;
-      top: 0;
     }
   
     .bg-txt-lkj {
