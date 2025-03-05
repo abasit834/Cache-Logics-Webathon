@@ -233,10 +233,6 @@
   
   /* Responsive for < 1706px */
   @media (max-width: 1706px) {
-    .gnb-lsk-s9 {
-      height: auto;
-      padding: 60px 20px;
-    }
   
     .bg-txt-lkj {
       display: none !important;
@@ -296,10 +292,7 @@
   
   /* Responsive for < 786px */
   @media (max-width: 786px) {
-    .gnb-lsk-s9 {
-      padding: 20px 10px;
-      height: auto;
-    }
+
   
     .bg-txt-lkj {
       display: none !important;
