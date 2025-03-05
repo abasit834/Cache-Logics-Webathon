@@ -29,9 +29,6 @@ const Team = ()=>{
 
                 <div className="image-2">
                 <img src={member} alt="" />
-                {/* <div className="content-1 second">
-
-                </div> */}
                 </div>
 
                 <div className="image-3">
