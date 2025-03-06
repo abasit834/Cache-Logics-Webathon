@@ -3,30 +3,36 @@ import "../css/Products.css";
 import Title from "../components/Title";
 
 import product1Img from "../assets/product1.svg";
-import product2Img from "../assets/product1.svg";
-import product3Img from "../assets/product1.svg";
+import product2Img from "../assets/product1.svg"; 
+import product3Img from "../assets/product1.svg"; 
 import demoIcon from "../assets/play-circle.svg";
 import patternImg from "../assets/pattern.svg";
 
 const Products = () => {
+  // Using refs to track each product section for intersection observer
   const prod1Ref = useRef(null);
   const prod2Ref = useRef(null);
   const prod3Ref = useRef(null);
 
   useEffect(() => {
     const options = {
-      threshold: 0.5,
+      threshold: 0.5, // Element should be 50% visible to trigger animation
     };
+
+    // Callback function to handle intersection observer events
     const observerCallback = (entries, observer) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          
-          entry.target.classList.add(entry.target.dataset.animation);
-          observer.unobserve(entry.target);
+          entry.target.classList.add(entry.target.dataset.animation); // Adds animation class dynamically
+          observer.unobserve(entry.target); // Stops observing once animated
         }
       });
     };
+
+    // Initializing observer
     const observer = new IntersectionObserver(observerCallback, options);
+
+    // Observing each product section
     if (prod1Ref.current) observer.observe(prod1Ref.current);
     if (prod2Ref.current) observer.observe(prod2Ref.current);
     if (prod3Ref.current) observer.observe(prod3Ref.current);
@@ -34,6 +40,7 @@ const Products = () => {
 
   return (
     <div className="products-page">
+      {/* Page Title Component */}
       <Title
         s_title="Our Portfolio"
         intro="Products We Have Worked On"
@@ -41,12 +48,8 @@ const Products = () => {
               engage, and retain more users. Trusted by over 4,000 startups."
       />
 
-      {/* PRODUCT #1: animate from left */}
-      <div
-        ref={prod1Ref}
-        className="product product1"
-        data-animation="animate-left"
-      >
+      {/* PRODUCT #1: Animates from the left */}
+      <div ref={prod1Ref} className="product product1" data-animation="animate-left">
         <div className="product-text">
           <h3 className="product-title">Product #1</h3>
           <p className="product-description">
@@ -62,37 +65,18 @@ const Products = () => {
           </div>
         </div>
 
+        {/* Product image with pattern background */}
         <div className="product-image-container">
-          <img
-            src={patternImg}
-            alt="Decorative pattern"
-            className="pattern-image pattern-image1"
-          />
-          <img
-            src={product1Img}
-            alt="Product 1 Screenshot"
-            className="product-image"
-          />
+          <img src={patternImg} alt="Decorative pattern" className="pattern-image pattern-image1" />
+          <img src={product1Img} alt="Product 1 Screenshot" className="product-image" />
         </div>
       </div>
 
-      {/* PRODUCT #2: animate from right */}
-      <div
-        ref={prod2Ref}
-        className="product product2"
-        data-animation="animate-right"
-      >
+      {/* PRODUCT #2: Animates from the right */}
+      <div ref={prod2Ref} className="product product2" data-animation="animate-right">
         <div className="product-image-container">
-          <img
-            src={patternImg}
-            alt="Decorative pattern"
-            className="pattern-image pattern-image2"
-          />
-          <img
-            src={product2Img}
-            alt="Product 2 Screenshot"
-            className="product-image"
-          />
+          <img src={patternImg} alt="Decorative pattern" className="pattern-image pattern-image2" />
+          <img src={product2Img} alt="Product 2 Screenshot" className="product-image" />
         </div>
 
         <div className="product-text">
@@ -111,29 +95,17 @@ const Products = () => {
         </div>
       </div>
 
-      {/* PRODUCT #3: animate from left (reversed orientation) */}
-      <div
-        ref={prod3Ref}
-        className="product product3"
-        data-animation="animate-left"
-      >
+      {/* PRODUCT #3: Animates from the left (reversed orientation) */}
+      <div ref={prod3Ref} className="product product3" data-animation="animate-left">
         <div className="product-image-container">
-          <img
-            src={patternImg}
-            alt="Decorative pattern"
-            className="pattern-image pattern-image3"
-          />
-          <img
-            src={product3Img}
-            alt="Product 3 Screenshot"
-            className="product-image"
-          />
+          <img src={patternImg} alt="Decorative pattern" className="pattern-image pattern-image3" />
+          <img src={product3Img} alt="Product 3 Screenshot" className="product-image" />
         </div>
 
         <div className="product-text">
           <h3 className="product-title">Product #3</h3>
           <p className="product-description">
-          Measure what matters with Untitled’s easy-to-use reports. You can filter, export, and drilldown on the data in a couple clicks.
+            Measure what matters with Untitled’s easy-to-use reports. You can filter, export, and drilldown on the data in a couple clicks.
           </p>
           <div className="product-buttons">
             <button className="product-btn primary-btn">

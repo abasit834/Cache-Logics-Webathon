@@ -1,39 +1,43 @@
 import React, { useRef, useEffect } from "react";
 import "../css/Standout.css";
 import Title from "../components/Title";
+
+// Importing assets for the section
 import teamImage from "../assets/stout.svg";
 import globeIcon from "../assets/globeIcon.svg";
 import supportIcon from "../assets/supportIcon.svg";
 import tailoredIcon from "../assets/tailoredIcon.svg";
 
 const Standout = () => {
-  const imageRef = useRef(null);
+  const imageRef = useRef(null); // Reference for the image to apply animation
 
   useEffect(() => {
-    const options = { threshold: 0.3 }; // how much of the image must be in view
+    // Intersection Observer settings to trigger animation when 30% of the image is visible
+    const options = { threshold: 0.3 };
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          // Add the animation class
+          // Add animation class when the image enters the viewport
           entry.target.classList.add("pixelateReveal");
-          // Optional: stop observing so it won't re-run
-          // observer.unobserve(entry.target);
         }
       });
     }, options);
 
+    // Observe the image if reference exists
     if (imageRef.current) {
       observer.observe(imageRef.current);
     }
 
+    // Cleanup: Disconnect the observer when the component unmounts
     return () => observer.disconnect();
   }, []);
 
   return (
     <div className="standout-page" id="about-us">
+      {/* Section title and introduction */}
       <Title
         s_title="Why Us"
-        intro="How does Cache Logic stands out?"
+        intro="How does Cache Logic stand out?"
         desc="At Cache Logic, we are a passionate team of tech experts dedicated to powering
               your IT evolution. Founded by industry leaders with diverse expertise, we focus
               on delivering innovative, reliable, and scalable tech solutions—from AI and
@@ -41,17 +45,20 @@ const Standout = () => {
               your business stay ahead in a digital world."
       />
 
+      {/* Image container with animation effect */}
       <div className="standout-image-container">
-        {/* Use ref on the image */}
         <img
-          ref={imageRef}
+          ref={imageRef} // Applying ref to trigger the animation
           src={teamImage}
           alt="Team working together"
           className="standout-image"
         />
       </div>
 
+      {/* Container for standout feature cards */}
       <div className="standout-cards-container">
+        
+        {/* First card: Global Reach */}
         <div className="standout-card">
           <img src={globeIcon} alt="Globe Icon" className="standout-card__icon" />
           <h3 className="standout-card__title">Global Reach With Localized Expertise.</h3>
@@ -62,6 +69,7 @@ const Standout = () => {
           <a href="#" className="standout-card__link">Learn more →</a>
         </div>
 
+        {/* Second card: Dedicated Support */}
         <div className="standout-card">
           <img src={supportIcon} alt="Support Icon" className="standout-card__icon" />
           <h3 className="standout-card__title">Dedicated Support To Drive Your Success.</h3>
@@ -72,6 +80,7 @@ const Standout = () => {
           <a href="#" className="standout-card__link">Learn more →</a>
         </div>
 
+        {/* Third card: Tailored Solutions */}
         <div className="standout-card">
           <img src={tailoredIcon} alt="Tailored Icon" className="standout-card__icon" />
           <h3 className="standout-card__title">Tailored Solutions For Every Industry.</h3>

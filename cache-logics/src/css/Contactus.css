@@ -194,7 +194,7 @@ textarea {
     }
 }
 /* Tablets (max-width: 1024px) */
-@media screen and (min-width : 1025px) and (max-width : 1200px) {
+@media screen and (min-width : 1025px) and (max-width : 1400px) {
     .contact-us{
         margin-left: 100px;
     }
