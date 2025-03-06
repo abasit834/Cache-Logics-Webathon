@@ -15,8 +15,10 @@
       transform: scale(1);
     }
   }
-
- 
+  
+#background-img {
+    animation: pixelateReveal 1.0s ease-out forwards;
+  }
 
 
 

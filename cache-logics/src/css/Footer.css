@@ -9,7 +9,7 @@
   padding: 40px;
   overflow: hidden;
   font-family: 'Urbanist';
-  height: 75vh;
+  height: 83vh;
   z-index: 1;
 }
 
@@ -99,8 +99,8 @@
 
 .bg-txt-lkj {
   position: absolute;
-  left: 45%;
-  bottom: 33px;
+  left: 50%;
+  bottom: 35px;
   transform: translateX(-50%);
   font-size: 280px;
   font-style: italic;
@@ -235,14 +235,14 @@
 @media (max-width: 1500px) {
   .gnb-lsk-s9 {
    
-    height: 75vh;
+    height: 83vh;
 
   }
 
   .bg-txt-lkj {
     position: absolute;
-    left: 45%;
-    bottom: 33px;
+    left: 50%;
+    bottom: 35px;
   }
 
 }
