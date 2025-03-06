@@ -164,7 +164,7 @@
 
 
 .pattern-image3 {
-  top: 100px;
+  bottom:94px;
   left: 500px;
   width: 298px;
   height: 408px;
@@ -206,8 +206,14 @@
   transform: scale(1.05);
 }
 
+@media (max-width: 1493px) {
+  .product.product2 {
+  position:relative ;
+  left:50px;
+  }
+}
 
-@media (max-width: 1300px) {
+@media (max-width: 1330px) {
   .products-page {
     padding: 20px 16px;
     /* position: relative;
@@ -352,5 +358,16 @@
   .product.product2 {
 
     margin-bottom: 110px;
+  }
+}
+
+
+@media (max-width: 450px){
+  .products-page {
+    width:100vw;
+  }
+  .product.product2{
+    left:0;
+  
   }
 }

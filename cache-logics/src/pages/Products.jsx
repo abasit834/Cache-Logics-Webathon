@@ -133,9 +133,7 @@ const Products = () => {
         <div className="product-text">
           <h3 className="product-title">Product #3</h3>
           <p className="product-description">
-            This final product showcases a reversed layout: the product image
-            on the left, text on the right. Easily adapt your workflow to fit
-            any scenario, ensuring maximum flexibility for your customers.
+          Measure what matters with Untitled’s easy-to-use reports. You can filter, export, and drilldown on the data in a couple clicks.
           </p>
           <div className="product-buttons">
             <button className="product-btn primary-btn">
