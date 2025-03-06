@@ -24,7 +24,7 @@ function App() {
       <Team/>
       <Locations/>
       <ContactUs/>
-      {/* <Footer/> */}
+      <Footer/>
   
       
     </>

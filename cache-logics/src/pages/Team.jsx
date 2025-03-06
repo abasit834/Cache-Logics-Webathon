@@ -32,6 +32,11 @@ const Team = ()=>{
                 <h3 className="sm-first">Faizan Ahmed</h3>
                 <p id="sm-founder">Founder & CEO</p>
                 <p className="sm-first-p">Former co-founder of Opendoor. Early staff at Apple and Google.</p>
+                <div className="social-media">
+                <img className="sm-icons" src={socialIcon3} alt="Social Icon 3" />
+                <img className="sm-icons" src={socialIcon1} alt="Social Icon 1" />
+                <img className="sm-icons" src={socialIcon2} alt="Social Icon 2" />
+                </div>
             </div>
             <img className="ceo" src={ceo} alt="" />
 

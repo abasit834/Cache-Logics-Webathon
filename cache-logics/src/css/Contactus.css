@@ -108,7 +108,10 @@ label {
     width : 232px;
 }
 
-
+.error{
+    color : red;
+    font-size : 0.8em;
+}
 
 input::placeholder,textarea::placeholder{
     font-family: Urbanist;
