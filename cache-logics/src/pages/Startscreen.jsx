@@ -16,8 +16,8 @@ const Startscreen =()=>{
                   <h1>Fast-Tracking Your AI Evolution</h1>
                   <p>Empowering businesses with cutting-edge technology and tailored solutions.</p>
                   <div className="buttons">
-                    <button id="discover-btn">Discover Our Services</button>
-                    <button id="contact-btn"><span><img src={call} alt="" /></span>Contact Us</button>
+                    <button id="discover-btn" onClick={() => { document.getElementById("services")?.scrollIntoView({ behavior: "smooth" });}}>Discover Our Services</button>
+                    <button id="contact-btn"  onClick={() => { document.getElementById("contact-us-page")?.scrollIntoView({ behavior: "smooth" });}}><span><img src={call} alt="" /></span>Contact Us</button>
              </div>
              </div>
             </div>
