@@ -3,12 +3,9 @@
   line-height: 1.5;
   font-weight: 400;
 }
-
-html
-{
+body{
   overflow-x: hidden;
 }
-
 
 button{
   cursor: pointer;

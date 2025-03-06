@@ -7,7 +7,7 @@ import office from "../assets/Icon-2.svg";
 
 const Contactus = ()=>{
     return (
-        <div className="contact-us">
+        <div className="contact-us" id="contact-us-page">
             <div className="contact-us-intro">
                 <span className="contact-us-intro__subtitle">Contact Us</span>
                 <h2 className="contact-us-intro__title">Let’s Build the Next Product Together</h2>
@@ -44,32 +44,32 @@ const Contactus = ()=>{
             
         </div>
 
-<div class="contact-form">
+<div className="contact-form">
     <form action="">
-        <div class="form-group">
-            <div class="input-wrapper">
-                <label for="first-name">First name</label>
-                <input class="names" type="text" id="first-name" placeholder="First name"/>
+        <div className="form-group">
+            <div className="input-wrapper">
+                <label htmlFor="first-name">First name</label>
+                <input className="names" type="text" id="first-name" placeholder="First name"/>
             </div>
-            <div class="input-wrapper">
-                <label for="last-name">Last name</label>
-                <input class="names" type="text" id="last-name" placeholder="Last name"/>
+            <div className="input-wrapper">
+                <label htmlFor="last-name">Last name</label>
+                <input className="names" type="text" id="last-name" placeholder="Last name"/>
             </div>
         </div>
         
-        <div class="input-wrapper">
-            <label for="email">Email</label>
+        <div className="input-wrapper">
+            <label htmlFor="email">Email</label>
             <input type="text" id="email" placeholder="you@company.com"/>
         </div>
 
-        <div class="input-wrapper">
-            <label for="message">Message</label>
+        <div className="input-wrapper">
+            <label htmlFor="message">Message</label>
             <textarea id="message" placeholder="Leave us a message..."></textarea>
         </div>
 
-        <div class="checkbox-wrapper">
+        <div className="checkbox-wrapper">
             <input type="checkbox" id="privacy-policy"/>
-            <label for="privacy-policy">You agree to our friendly <a href="#">privacy policy</a>.</label>
+            <label htmlFor="privacy-policy">You agree to our friendly <a href="#">privacy policy</a>.</label>
         </div>
 
         <button type="submit">Send message</button>
