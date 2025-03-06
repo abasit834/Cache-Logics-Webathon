@@ -1,12 +1,39 @@
-# React + Vite
+# Cache Logics Webathon
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+Welcome to the **Cache Logics Webathon** project! This is a React + Vite-based web application.
 
-Currently, two official plugins are available:
+## Getting Started
+Follow the steps below to clone the repository and run the project on your local machine.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Prerequisites
+Ensure you have the following installed on your system:
+- [Node.js](https://nodejs.org/) (LTS version recommended)
+- [Git](https://git-scm.com/)
 
-## Expanding the ESLint configuration
+### Clone the Repository
+To clone this repository, run the following command:
+```sh
+git clone https://github.com/abasit834/Cache-Logics-Webathon.git
+```
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Navigate to the Project Directory
+```sh
+cd cache-logics
+```
+
+### Install Dependencies
+Run the following command to install the required dependencies:
+```sh
+npm install
+```
+
+### Start the Development Server
+To run the project in development mode, use:
+```sh
+npm run dev
+```
+This will start a local development server. Open your browser and navigate to the URL displayed in the terminal (typically `http://localhost:5173/`).
+
+
+
