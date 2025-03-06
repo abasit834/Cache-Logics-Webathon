@@ -1,7 +1,7 @@
 .gnb-lsk-s9 {
   position: absolute;
   left: 0;
-  margin-top: 300px;
+  margin-top: 100px;
   width: 100vw;
   max-width: none;
   background-color: #0C111D;
@@ -99,8 +99,8 @@
 
 .bg-txt-lkj {
   position: absolute;
-  left: 50%;
-  bottom: 35px;
+  left: 47%;
+  bottom: 63px;
   transform: translateX(-50%);
   font-size: 280px;
   font-style: italic;
@@ -241,8 +241,8 @@
 
   .bg-txt-lkj {
     position: absolute;
-    left: 50%;
-    bottom: 35px;
+    left: 47%;
+    bottom: 63px;
   }
 
 }

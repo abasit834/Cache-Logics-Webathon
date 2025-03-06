@@ -1,35 +1,57 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import "../css/Standout.css";
-import Title from "../components/Title"
-
+import Title from "../components/Title";
 import teamImage from "../assets/stout.svg";
-
 import globeIcon from "../assets/globeIcon.svg";
 import supportIcon from "../assets/supportIcon.svg";
 import tailoredIcon from "../assets/tailoredIcon.svg";
 
 const Standout = () => {
+  const imageRef = useRef(null);
+
+  useEffect(() => {
+    const options = { threshold: 0.3 }; // how much of the image must be in view
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          // Add the animation class
+          entry.target.classList.add("pixelateReveal");
+          // Optional: stop observing so it won't re-run
+          // observer.unobserve(entry.target);
+        }
+      });
+    }, options);
+
+    if (imageRef.current) {
+      observer.observe(imageRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <div className="standout-page" id="about-us">
-
-      <Title s_title="Why Us" intro="How does Cache Logic stands out?" desc=" At Cache Logic, we are a passionate team of tech experts dedicated to powering
-          your IT evolution. Founded by industry leaders with diverse expertise, we focus
-          on delivering innovative, reliable, and scalable tech solutions—from AI and
-          automation to cybersecurity and app development. Our mission is simple: help
-          your business stay ahead in a digital world."/>
-
+      <Title
+        s_title="Why Us"
+        intro="How does Cache Logic stands out?"
+        desc="At Cache Logic, we are a passionate team of tech experts dedicated to powering
+              your IT evolution. Founded by industry leaders with diverse expertise, we focus
+              on delivering innovative, reliable, and scalable tech solutions—from AI and
+              automation to cybersecurity and app development. Our mission is simple: help
+              your business stay ahead in a digital world."
+      />
 
       <div className="standout-image-container">
+        {/* Use ref on the image */}
         <img
+          ref={imageRef}
           src={teamImage}
           alt="Team working together"
           className="standout-image"
         />
       </div>
 
-
       <div className="standout-cards-container">
-
         <div className="standout-card">
           <img src={globeIcon} alt="Globe Icon" className="standout-card__icon" />
           <h3 className="standout-card__title">Global Reach With Localized Expertise.</h3>
@@ -40,7 +62,6 @@ const Standout = () => {
           <a href="#" className="standout-card__link">Learn more →</a>
         </div>
 
-
         <div className="standout-card">
           <img src={supportIcon} alt="Support Icon" className="standout-card__icon" />
           <h3 className="standout-card__title">Dedicated Support To Drive Your Success.</h3>
@@ -50,7 +71,6 @@ const Standout = () => {
           </p>
           <a href="#" className="standout-card__link">Learn more →</a>
         </div>
-
 
         <div className="standout-card">
           <img src={tailoredIcon} alt="Tailored Icon" className="standout-card__icon" />
