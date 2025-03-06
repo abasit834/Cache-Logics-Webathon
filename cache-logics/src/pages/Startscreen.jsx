@@ -1,6 +1,6 @@
 import React from "react";
 import "../css/startscreen.css";
-import bg from "../assets/image.png";
+import bg from "../assets/image.jpg";
 import call from "../assets/call.svg";
 import companys from "../assets/logos.svg";
 

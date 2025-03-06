@@ -45,7 +45,7 @@
     height: 517px;
     top:94px;
     left: 157px;
-    transform: scaleX(-1);
+    /* transform: scaleX(-1); */
 }
 
 .bg-container {
