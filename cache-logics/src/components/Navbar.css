@@ -112,15 +112,11 @@ nav ul li:hover {
     right : -200px;
 }
 
-@media screen and (max-width : 1024px)
-{
-    #contact-us{
-        margin-right: -5px;
-    }
-}
-
 @media screen and (max-width: 825px)
 {
+    header {
+        animation: none !important;
+    }
     #logo{
         width: 155px;
         margin-left: -20px;
@@ -130,7 +126,7 @@ nav ul li:hover {
         height: 25px;
         width: 25px;
         margin-left: auto;
-        margin-right: -10px;
+        margin-right: -39px;
     }
     #contact-us{
         display: none;

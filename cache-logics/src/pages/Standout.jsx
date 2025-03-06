@@ -10,7 +10,7 @@ import tailoredIcon from "../assets/tailoredIcon.svg";
 
 const Standout = () => {
   return (
-    <div className="standout-page">
+    <div className="standout-page" id="about-us">
 
       <Title s_title="Why Us" intro="How does Cache Logic stands out?" desc=" At Cache Logic, we are a passionate team of tech experts dedicated to powering
           your IT evolution. Founded by industry leaders with diverse expertise, we focus

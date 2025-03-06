@@ -15,12 +15,8 @@
       transform: scale(1);
     }
   }
-  
-  #background-img {
-    animation: pixelateReveal 1.5s ease-out forwards;
-  }
-  
 
+ 
 
 
 
@@ -75,6 +71,17 @@
   transform: scale(1.09);
 }
 
+#contact-btn span{
+        position: relative;
+        bottom: 5px;     
+}
+ 
+#contact-btn img {
+    position: relative;
+    top: 8px;
+    right: 9px;
+  }
+
 
 .content{
     position: relative;
@@ -122,9 +129,11 @@
 }
 
 #company-logos{
+    margin : 0 auto;
     margin-top: auto;
     width : 100%;
     height : 28px;
+    
 }
 
 #company-text{
@@ -134,7 +143,6 @@
     font-size: 0.9em;
     line-height: 24px;
     text-align: center;
-
 }
 
 .buttons button {
@@ -144,117 +152,249 @@
   .buttons button:hover {
     transform: scale(1.05);
   }
-  
+  #contact-btn img {
+    width: 20px;
+    height: 15px;
+}
 
-@media screen and (min-width : 426px) and (max-width : 768px)
-{
-
-    .main-container{
+/* For tablets and medium devices (426px - 768px) */
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    .main-container {
         width: 80%;
         left: 5%;
         height: 450px;
     }
 
-    .bg-container{
+    .bg-container {
         left: 4%;
- 	    width : 79%;
-        top : 5px;
-        height : 453px;
-
+        width: 66%;
+        top: 3px;
+        height: 453px;
     }
 
-    #background-img{
+    #background-img {
         width: 79%;
-        left : 25px;
+        left: 25px;
         height: 447px;
-
     }
 
     .content {
-        width : 50%;
-    }
-    .content h1{
-        font-size: 1.9em;
+        margin-top : 132px;
+        width: 56%;
     }
 
-    .buttons{
+    .content h1 {
+        font-size: 1.2em;
+    }
+    .content p{
+        font-size: 0.4em;
+        margin-top: -12px;
+    }
+
+    .buttons {
         width: 350px;
     }
-    
-
+    #discover-btn{
+        width: 180px;
+        height: 45px;
+        font-size: 0.8em;
+   
+    }
+    #contact-btn {
+        width: 131px;
+        height: 48px;
+        font-size: 0.8em;
+    }
 }
 
-@media screen and (min-width : 769px ) and (max-width : 1024px)
+
+@media screen and (min-width: 1280px) and (max-width: 1440px)
 {
+    .bg-container{
+        width : 1120px;
+        height: 770px;
+    }
 
     .main-container{
+        width: 1299px;
+        height: 776px;
+
+    }
+    #background-img{
+        width: 981px;
+        height: 769px;
+    }
+
+    #company-logos{
+        height : 36px;
+    }
+    #company-text{
+        font-size: 1.3em;
+    }
+
+    .content {
+        width : 60%;
+    }
+
+    .content p {
+            font-size: 1.2em;
+   
+    }
+
+    .content h1 {
+        font-size: 3.6em;        
+    }
+    #discover-btn{
+        width: 244px;
+        height: 60px;
+        font-size: larger;
+    }
+    #contact-btn{
+        width: 181px;
+        height: 60px;
+        font-size: larger;
+    }
+    #contact-btn img {
+        width: 30px;
+        height: 20px;
+    }
+
+}
+/* For small laptops and large tablets (769px - 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    #contact-btn img {
+        position: relative;
+        width : 20px;
+        height: 15px;
+        top: 8px;
+        right: 9px;
+    }
+    .main-container {
         width: 90%;
         height: 555px;
     }
+    .content{
+        width: 40%;
+    }
 
-    .bg-container{
+    .bg-container {
         width: 85%;
         height: 555px;
         top: 10px;
         left: 3%;
     }
 
-    #background-img{
+    #background-img {
         width: 79%;
-        left : 9%;
-        height : 550px;
+        left: 9%;
+        height: 550px;
     }
-    #company-text{
+
+    #company-text {
         margin-top: 150px;
     }
 }
 
-@media screen and (max-width : 425px)
-{
-    .main-container{
-      width: 360px;
-	  height: 380px;
-      left: 19px;
-    }
-
-    #background-img{
-      width: 300px;
-      height: 378px;
- 	  top: 94px;
- 	  left: 29px; 		
-    }
-    .bg-container{
-        width: 219px;
-        left : 11px;
+/* For mobile devices (max-width: 425px) */
+@media screen and (max-width: 425px) {
+    .main-container {
+        width: 90%;
         height: 380px;
-        top:5px;
+        left: 5%;
     }
 
-
-.buttons button{
-            padding: 0;
-     		width: 107px;
-     		height: 34px;
-    	    font-size: 9px;
+    .bg-container {
+        width: 62%;
+        left: 4%;
+        height: 380px;
+        top: 4px;
     }
+
+    #background-img {
+        width: 90%;
+        height: 378px;
+        top: 94px;
+        left: 5%;
+    }
+
+    .buttons button {
+        padding: 0;
+        width: 107px;
+        height: 34px;
+        font-size: 9px;
+    }
+
     .content {
         width: 70%;
         top: 39%;
+        margin-top: 20px;
     }
-    .content h1{
-        font-size: 1.8em;
+
+    .content h1 {
+        font-size: 1.4em;
     }
+
     .content p {
         font-size: 0.6em;
-        margin-top: -17px;
-    }
-
-}
-
-@media screen and (max-width : 375px)
-{
-    .bg-container{
-        width: 197px;
+        margin-top: -10px;
     }
 }
 
+/* For extra small devices (max-width: 375px) */
+@media screen and (max-width: 375px) {
+    .main-container {
+        width: 95%;
+    }
+
+    .bg-container {
+        left: 3%;
+        width: 54%;
+        height: 378px;
+    }
+
+    #background-img {
+        width: 90%;
+    }
+
+    .content {
+        width: 80%;
+        margin-top: 50px;
+    }
+
+    .content h1 {
+        font-size: 1.2em;
+    }
+
+    .content p {
+        font-size: 0.5em;
+    }
+}
+
+/* For very small devices (max-width: 320px) */
+@media screen and (max-width: 320px) {
+    .main-container {
+        width: 95%;
+        height: 356px;
+    }
+
+    .bg-container {
+        left : 5%;
+        width: 45%;
+        height: 356px;
+    }
+
+    #background-img {
+        width: 90%;
+        height: 354px;
+    }
+
+    .content {
+        width: 75%;
+        margin-top: 34px;
+    }
+
+    .content h1 {
+        font-size: 1.1em;
+    }
+}

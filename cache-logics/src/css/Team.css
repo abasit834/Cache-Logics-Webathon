@@ -188,7 +188,7 @@
 
   .ceo-arrow-icon{
     width : 30px; 
-    height:"30px";
+    height:30px;
     position :absolute;
     top : 491px;
     z-index: 1;
@@ -206,183 +206,288 @@
     cursor: pointer;
   }
 
-/* Tablets (max-width: 1024px) */
-@media screen and (max-width: 1024px) {
-    .team-container {
-        width: 90%;
-        grid-template-columns: 1fr 1fr; /* Two equal columns */
-        grid-template-rows: auto;
-        height : 781px;
-    }
-
-    .team-container h3{
-        font-size: 24px;
-    }
-
-    .third p {
-        font-size: 14px;
-    }
-    .first {
-        width: 47%;
-        left: 15px;
-    }
-
-    .team-btns button {
-        font-size: 14px;
-        padding: 10px 16px;
-    }
-    .ceo{
-        width: 115%;
-        height : 803px;
-    }
-
-    .co-founder{
-        width : 90%;
-        left: 55px;
-        height : 390px;
-    }
-    .product-manager{
-        position: relative;
-        width: 90%;
-        left : 47px;
-        height : 390px;
-    }
-    .third{
-      left : 45px;
-    }
-    #founder {
-        font-size: 16px;
-    }
-    .first p{
-        font-size: 14px;
-    }
-    .second{
-        left : 65px;
-    }
-    .ceo-arrow-icon{
-        top: 581px;
-        right: 446px;
-    }
+.sm-container {
+    display: none;
 }
 
-/* Small Tablets & Large Phones (max-width: 768px) */
-@media screen and (max-width: 768px) {
-    .team-container {
-        grid-template-columns: 1fr 1fr; /* Stack images in one column */
-        height: 513px;
-        gap: 10px;
+  @media screen and (max-width : 1024px)
+{
+    .first h3,.second h3 ,.third h3{
+        font-size: 20px;
     }
-
-    .image-1,
-    .image-2,
-    .image-3 {
-        margin: 0 auto;
-    }
-
-    .ceo{
-        width: 423px;
-        height: 534px;
-        left : -12px;
-    }
-
-    .product-manager,
-    .co-founder {
-        width: 246px;
-        height: 261px;
-    }
-
-    .content-1 {
-        left: 10px;
-        bottom: 5px;
-        padding: 16px;
-        /* width: 90%; */
-    }
-
-    .first {
-        width: 51%;
-        height: 151px;
-        margin-left : 4px;
-    }
-
-    .first p, .third p {
+    .first p , .second p , .third p {
         font-size: 12px;
     }
 
-    .first h3{
-        font-size : 20px;
+    .ceo-arrow-icon {
+        top: 497px;
+        right: 38%;
     }
 
-    .third h3{
-        font-size : 20px;
+    .third{
+        margin-left: -13px;
+    }
+}
+
+
+  @media screen and (max-width: 786px) {
+    .team-container {
+        margin-left: 50px;
+        width: 92%;
+    }
+    
+    .ceo {
+        width: 102%;
     }
 
     .third {
-        width: 79%;
-        height: auto;
-    }
-
-    .team-btns button {
-        font-size: 13px;
-        padding: 8px 14px;
-    }
-}
-
-/* Mobile Screens (max-width: 480px) */
-@media screen and (max-width: 480px) {
-    .team-page {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .team-container {
-        width: 95%;
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        gap: 10px;
-    }
-
-    .image-1 img,
-    .image-2 img,
-    .image-3 img {
-        width: 100%;
-        height: auto;
-        border-radius: 12px;
-    }
-
-    .content-1 {
-        left: 5px;
-        bottom: 5px;
-        padding: 12px;
-        width: 95%;
+        margin-left: -17px;
     }
 
     .first h3,
+    .second h3,
     .third h3 {
-        font-size: 20px;
+        font-size: clamp(1rem, 2.5vw, 1.25rem); /* Scales between 1rem and 1.25rem */
     }
 
-    .third p {
-        font-size: 13px;
-        margin-top: -15px;
+    .first p,
+    .third p,
+    .second p {
+        font-size: clamp(0.8rem, 2vw, 1rem); /* Scales between 0.8rem and 1rem */
+        margin-left: 2px;
     }
 
-    .team-btns {
-        width: 100%;
-        text-align: center;
+    .second {
+        left: 17px;
+        width: 79%;
     }
 
-    .team-btns button {
-        font-size: 12px;
-        padding: 8px 12px;
-        margin: 4px;
+    .arrow-icon {
+        width: clamp(20px, 4vw, 25px); /* Scales icon size */
+        height: clamp(20px, 4vw, 25px);
     }
+
 }
 
-
-@media screen and (max-width : 320px)
+@media screen and (max-width : 375px)
 {
-    .team-btns{
-        width: max-content;
+    .sm-first {
+        margin-top: -10px;
+        font-size: 1.1em;
     }
+    .sm-content{
+        height: 85px;
+    }
+    .team-container {
+        display : none;
+    }
+    .sm-container {
+        display: flex;
+        justify-content: center; /* Center the items */
+        align-items: center; /* Align items vertically */
+        border: 2px solid;
+        margin-top: 20px;
+        width: 90%;
+        height: auto;
+        max-width: 1200px;
+        padding: 10px;
+        border-radius: 24px;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 100%), 
+                    rgba(255, 255, 255, 0.343); 
+        backdrop-filter: blur(30px);
+        -webkit-backdrop-filter: blur(64px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-shadow: 4px 6px 10px rgba(0, 0.4, 0, 0.4);
+        display: flex;
+        flex-direction: column; /* Arrange children in a row */
+        gap: 20px;
+    }
+    
+    .sm-img {
+        width: 100%;/* Make each div take equal space */
+        height: 100%; /* Fill the container height */
+    }
+    
+    .sm-img .ceo,.co-founder,.product-manager {
+        width: 100%;
+        height: 100%;
+        border-radius: 12px; /* Optional: Rounded corners */
+    }
+   .sm-content{
+    position: absolute;
+    z-index: 1;
+    width: 75%;
+    height: 100px;
+    bottom: 30px;
+    left : 20px;
+    padding: 24px 20px 24px 20px;
+    border-radius: 16px;
+    border-width: 1px;
+    backdrop-filter: blur(24px);
+    border: 1px solid #FFFFFF4D;
+   }
+
+   .sm-content-sm{
+    position: relative;
+   }
+    .co-founder{
+        margin-left:-10px;
+    }
+
+    .sm-content{
+        color:white;
+    }
+
+    .sm-first{
+        font-size: 1.1em;
+    }
+    #sm-founder{
+        font-size : 0.7em;
+    }
+    .sm-first-p{
+        font-size: 0.6em;
+    }
+
+    .sm-arrow-icon{
+        position: absolute;
+        right: 0;
+        top : 3px;
+        padding : 10px;
+        width: 20px;
+        height: 20px;
+    }
+
+    #sm-co-founder{
+        top: 52%;
+        height: 75px;
+        font-size: small;
+        width: 66%;
+        left: 29px;
+    
+    }
+    #sm-product{
+        height: 75px;
+        font-size: small;
+        width: 66%;
+        left: 29px;
+    }
+
+    .sm-icons{
+        width : 10px;
+    }
+    .social-media{
+        left: 20px;
+        bottom: 6px;
+    }
+  
+
+}
+
+@media screen and (min-width : 378px ) and (max-width: 600px) {
+
+    .team-container {
+        display : none;
+    }
+
+    .sm-container {
+        display: flex;
+        justify-content: center; /* Center the items */
+        align-items: center; /* Align items vertically */
+        border: 2px solid;
+        margin-top: 20px;
+        width: 90%;
+        height: auto;
+        max-width: 1200px;
+        padding: 10px;
+        border-radius: 24px;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 100%), 
+                    rgba(255, 255, 255, 0.343); 
+        backdrop-filter: blur(30px);
+        -webkit-backdrop-filter: blur(64px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-shadow: 4px 6px 10px rgba(0, 0.4, 0, 0.4);
+        display: flex;
+        flex-direction: column; /* Arrange children in a row */
+        gap: 20px;
+    }
+    
+    .sm-img {
+        width: 100%;/* Make each div take equal space */
+        height: 100%; /* Fill the container height */
+    }
+    
+    .sm-img .ceo,.co-founder,.product-manager {
+        width: 100%;
+        height: 100%;
+        border-radius: 12px; /* Optional: Rounded corners */
+    }
+   .sm-content{
+    position: absolute;
+    z-index: 1;
+    width: 75%;
+    height: 100px;
+    bottom: 30px;
+    left : 20px;
+    padding: 24px 20px 24px 20px;
+    border-radius: 16px;
+    border-width: 1px;
+    backdrop-filter: blur(24px);
+    border: 1px solid #FFFFFF4D;
+   }
+
+   .sm-content-sm{
+    position: relative;
+   }
+    .co-founder{
+        margin-left:-10px;
+    }
+
+    .sm-content{
+        color:white;
+    }
+
+    .sm-first{
+        font-size: 1.1em;
+    }
+    #sm-founder{
+        font-size : 0.7em;
+    }
+    .sm-first-p{
+        font-size: 0.6em;
+    }
+
+    .sm-arrow-icon{
+        position: absolute;
+        right: 0;
+        top : 3px;
+        padding : 10px;
+        width: 20px;
+        height: 20px;
+    }
+
+    #sm-co-founder{
+        top: 52%;
+        height: 75px;
+        font-size: small;
+        width: 66%;
+        left: 29px;
+    
+    }
+    #sm-product{
+        height: 75px;
+        font-size: small;
+        width: 66%;
+        left: 29px;
+    }
+
+    .sm-icons{
+        width : 10px;
+    }
+    .social-media{
+        left: 20px;
+        bottom: 6px;
+    }
+  
+    
+   
 }

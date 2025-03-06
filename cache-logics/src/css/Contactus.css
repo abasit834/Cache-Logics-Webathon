@@ -1,10 +1,10 @@
 .contact-us{
     position: relative;
-    top : 200px;
     width : 100%;
     height: 100%;
     margin : 0 auto;
     max-width: 1280px;
+    margin-top: 100px;
 }
 
 .contact-us-intro {
@@ -108,7 +108,10 @@ label {
     width : 232px;
 }
 
-
+.error{
+    color : red;
+    font-size : 0.8em;
+}
 
 input::placeholder,textarea::placeholder{
     font-family: Urbanist;
@@ -216,6 +219,13 @@ textarea {
 
     #first-name, #last-name {
         width: 100%;
+    }
+    .contact-us-intro{
+        text-align: center;
+    }
+    .contact-us-intro__subtitle{
+        display: block;
+        text-align: center;
     }
 }
 

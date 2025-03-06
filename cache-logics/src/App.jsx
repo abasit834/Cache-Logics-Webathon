@@ -8,12 +8,14 @@ import Locations from './pages/Locations';
 import ContactUs from './pages/Contactus';
 import Footer from './pages/footer';
 import Team from './pages/Team';
+import "./App.css";
 
 
 function App() {
 
   return (
     <>
+
       <Navbar/>
       <Startscreen/>
       <ServicesIntro/>
@@ -23,6 +25,8 @@ function App() {
       <Locations/>
       <ContactUs/>
       <Footer/>
+  
+      
     </>
   );
 }

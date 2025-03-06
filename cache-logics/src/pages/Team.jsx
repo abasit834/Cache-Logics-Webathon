@@ -22,6 +22,49 @@ const Team = ()=>{
              <button id="hiring">We’re hiring!</button>
         </div>
 
+
+        <div className="sm-container">
+
+            <div className="sm-img">
+            <div className="sm-content-sm">
+            <div className="sm-content">
+            <img className="sm-arrow-icon" src={arrow} alt=""/> 
+                <h3 className="sm-first">Faizan Ahmed</h3>
+                <p id="sm-founder">Founder & CEO</p>
+                <p className="sm-first-p">Former co-founder of Opendoor. Early staff at Apple and Google.</p>
+                <div className="social-media">
+                <img className="sm-icons" src={socialIcon3} alt="Social Icon 3" />
+                <img className="sm-icons" src={socialIcon1} alt="Social Icon 1" />
+                <img className="sm-icons" src={socialIcon2} alt="Social Icon 2" />
+                </div>
+            </div>
+            <img className="ceo" src={ceo} alt="" />
+
+            </div>
+        
+            </div>
+
+            <div className="sm-img"> 
+            <div id="sm-co-founder" className="sm-content">
+            <img className="sm-arrow-icon" src={arrow} alt=""/> 
+                <h3>Abdullah Sarfaraz</h3>
+                <p id="sm-co-founder">Co founder</p>
+            </div>     
+
+            <img className="co-founder" src={member} alt="" />
+            </div>
+
+            <div className="sm-img">
+            <div id="sm-product" className="sm-content product-manager">
+            <img className="sm-arrow-icon" src={arrow} alt=""/> 
+                <h3>Annie Stanley</h3>
+                <p id="sm-product">Product Manager</p>
+            </div>    
+            <img className="product-manager" src={member2} alt="" />
+            </div>
+
+        </div>
+
         <div className="team-container">
              <div className="image-1">
                 <img className="ceo" src={ceo} alt="" />
@@ -35,8 +78,8 @@ const Team = ()=>{
                 <img src={socialIcon3} alt="Social Icon 3" />
                 <img src={socialIcon1} alt="Social Icon 1" />
                 <img src={socialIcon2} alt="Social Icon 2" />
-          </div>
                 </div>
+              </div>
 
                 <div className="image-2"> 
                 <img className="co-founder" src={member} alt="" />
