@@ -162,14 +162,14 @@
 /* For tablets and medium devices (426px - 768px) */
 @media screen and (min-width: 426px) and (max-width: 768px) {
     .main-container {
-        width: 80%;
+        width: 85%;
         left: 5%;
         height: 450px;
     }
 
     .bg-container {
-        left: 4%;
-        width: 66%;
+        left: 1%;
+        width: 80%;
         top: 3px;
         height: 453px;
     }
@@ -181,12 +181,12 @@
     }
 
     .content {
-        margin-top : 132px;
-        width: 56%;
+        margin-top: 83px;
+        width: 45%;
     }
 
     .content h1 {
-        font-size: 1.2em;
+        font-size: 1.4em;
     }
     .content p{
         font-size: 0.4em;
@@ -277,7 +277,7 @@
         height: 555px;
     }
     .content{
-        width: 40%;
+        width: 41%;
     }
 
     .bg-container {

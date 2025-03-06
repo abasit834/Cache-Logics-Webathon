@@ -22,8 +22,14 @@ const Footer = () => {
           </p>
         </div>
         <div className="zxc-h-btns">
-          <button className="btn-x11 p-btn-x11">Discover Our Services</button>
-          <button className="btn-x11 s-btn-x11">
+          <button className="btn-x11 p-btn-x11" onClick={() => {
+              // Smoothly scroll to the Services section
+              document.getElementById("services")?.scrollIntoView({ behavior: "smooth" });
+            }}>Discover Our Services</button>
+          <button className="btn-x11 s-btn-x11" onClick={() => {
+              // Smoothly scroll to the Contact Us section
+              document.getElementById("contact-us-page")?.scrollIntoView({ behavior: "smooth" });
+            }}>
             <img src={callIcon} alt="Call Icon" />
             <span>Contact Us</span>
           </button>
@@ -55,10 +61,16 @@ const Footer = () => {
         <div className="rty-rgt-5">
           <h4 className="c-ttl-lkj">Company</h4>
           <ul className="llinks-lkj">
-            <li>About us</li>
+            <li onClick={() => {
+              // Smoothly scroll to the About Us section
+              document.getElementById("about-us")?.scrollIntoView({ behavior: "smooth" });
+            }}>About us</li>
             <li>Careers</li>
             <li>News</li>
-            <li>Contact</li>
+            <li onClick={() => {
+              // Smoothly scroll to the Contact Us section
+              document.getElementById("contact-us-page")?.scrollIntoView({ behavior: "smooth" });
+            }}>Contact</li>
           </ul>
          
         </div>
