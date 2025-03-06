@@ -50,6 +50,7 @@ header{
 }
 
 nav ul li {
+   
     font-weight: 700;
     color : #475467;
     list-style-type: none;
@@ -57,6 +58,8 @@ nav ul li {
     margin-left : 30px;
     line-height: 24px;
     cursor: pointer;
+   
+
 }
 
 nav li img {
@@ -64,6 +67,12 @@ nav li img {
     margin-bottom: 1px;
 }
 
+
+nav ul li:hover {
+    color:#1D315F;
+   
+  }
+  
 #contact-us {
     font-family: 'Urbanist';
     width: 110px;

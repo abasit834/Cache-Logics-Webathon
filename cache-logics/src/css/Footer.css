@@ -9,13 +9,13 @@
     padding: 40px;
     overflow: hidden;
     font-family: 'Urbanist';
-    height: 100vh;
+    height: 83vh;
     z-index: 1;
   }
   
   .ic-lkj {
     position: absolute;
-    right: -1140px;
+    right: -940px;
     bottom: 20px;
     display: flex;
     gap: 16px;
@@ -100,7 +100,7 @@
   .bg-txt-lkj {
     position: absolute;
     left: 50%;
-    bottom: 35px;
+    bottom: 40px;
     transform: translateX(-50%);
     font-size: 280px;
     font-style: italic;
@@ -232,7 +232,7 @@
 
   
   /* Responsive for < 1706px */
-  @media (max-width: 1706px) {
+  @media (max-width: 1430px) {
   
     .bg-txt-lkj {
       display: none !important;
@@ -293,6 +293,10 @@
   /* Responsive for < 786px */
   @media (max-width: 786px) {
 
+    .gnb-lsk-s9 {
+      height:100vh;
+      width:100vw;
+    }
   
     .bg-txt-lkj {
       display: none !important;

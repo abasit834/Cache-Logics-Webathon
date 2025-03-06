@@ -175,12 +175,13 @@ textarea {
     transition: background-color 0.3s;
 }
 
+
 .checkbox-wrapper label {
     font-family: 'Urbanist';
 }
 
 .contact-form button:hover {
-    background: #142048;
+    background: #182a6494;
 }
 
 /* Responsive for small screens */
